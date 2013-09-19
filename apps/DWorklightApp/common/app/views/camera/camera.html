@@ -1,0 +1,42 @@
+<div class="view mblView">
+	<style>
+		.pictureButtonGroup {
+			width:80%;
+			margin:8px auto;
+		}
+		.pictureButton {
+			width:44%;
+			height:50px;
+			margin:10px;
+		}
+		.pictureLabel {
+			margin:10px;
+		}
+		.pictureArea {
+			width:100%;
+			padding-top:10px;
+			border:2px solid black;
+		}
+	</style>
+	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'home'">Cordova Camera Test</h1>
+	
+    <div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props="label:'Description'"></div>
+    <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="">
+		This tests taking and showing a picture captured from the device camera
+    </div>  
+    
+    <div data-dojo-attach-point="dapNoCamera" style="display:none;">
+	    <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="">
+			No Camera detected! Unable to test.
+	    </div>  
+    </div>
+
+    <div data-dojo-attach-point="dapHasCamera" style="display:none;">
+		<div class="pictureButtonGroup">
+			<button class="pictureButton" data-dojo-attach-point="dapTakeDataPicture">Take DATA picture</button>
+			<button class="pictureButton" data-dojo-attach-point="dapTakeFilePicture">Take FILE picture</button>
+			<h4 data-dojo-attach-point="dapPictureLabel"  class="pictureLabel">No pictures taken</h4>
+			<img data-dojo-attach-point="dapImage" class="pictureArea" src="" />
+		</div>
+	</div>
+</div>

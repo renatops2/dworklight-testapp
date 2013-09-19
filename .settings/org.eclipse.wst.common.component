@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dworklight-testapp">
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/common"/>
+        <wb-resource deploy-path="/" source-path="/www"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/blackberry10"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/windowsphone8"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/blackberry"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/ipad"/>
+        <wb-resource deploy-path="/" source-path="/apps/DWorklightApp/mobilewebapp"/>
+        <property name="context-root" value="dworklight-testapp"/>
+    </wb-module>
+</project-modules>

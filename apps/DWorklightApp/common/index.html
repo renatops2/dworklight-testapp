@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>DWorklight Test App</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<meta name="apple-mobile-web-app-capable" content="yes">
+   		<link rel="shortcut icon" href="images/favicon.png">
+   		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   		<link rel="stylesheet" href="css/main.css">
+   		<script src="dojox/mobile/deviceTheme.js" data-dojo-config="mblUserAgent: 'Holodark'"></script>
+   		<script>
+		    var dojoConfig = {
+				async: true,
+				isDebug: false,
+				parseOnLoad : false,
+				mblHideAddressBar: false,
+ 				paths: {
+		            "dapp"         : "../libs/dapp",
+		            "dcordova"     : "../libs/dcordova",
+		            "dworklight"   : "../libs/dworklight",
+			        "app"          : "../app"
+		        }
+		    };
+	    </script>
+	    <script src="dojo/dojo.js"></script>
+   	</head>
+   	<body id="content" style="display: none;">
+   		<script src="js/init.js"></script>
+   	</body>
+</html>

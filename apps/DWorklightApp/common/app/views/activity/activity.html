@@ -1,0 +1,76 @@
+<div class="view mblView">
+
+	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'home'">Worklight Dynamic Busy Indicator Tests</h1>
+	
+    <div style="width:80%; margin: 20px auto;">
+        <input data-dojo-attach-point="dapText" 
+             data-dojo-type="dojox/mobile/TextBox"
+             data-dojo-props="placeHolder:'Enter activity message'"
+             style="width:100%;">
+        </input>
+	    <div data-dojo-attach-point="dapMessageButton" 
+	         data-dojo-type="dojox/mobile/ToolBarButton"
+	         data-dojo-props="label:'Click to start busy indicator'"
+	         style="width:100%;">
+	    </div>
+	    <br/><br/>
+        <div data-dojo-attach-point="dapCountdownButton" 
+             data-dojo-type="dojox/mobile/ToolBarButton"
+             data-dojo-props="label:'Click to start countdown busy indicator'"
+             style="width:100%;">
+        </div>   
+    </div>
+
+    <div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props="label:'Description'"></div>
+    <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="">
+		This tests out the dynamic busy indicator. In hybrid applications, the native Worklight
+		busy indicator is used. For browser based applications, the Dojo Mobile busy indicator
+		emulation is used. IOS devices allow for a custom message to be supplied. For all others,
+		the custom message is ignored.
+    </div>   
+
+    <div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props="label:'Syntax'"></div>
+    <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="">
+		<pre>
+require(["dworklight/activity"], function(activity) {
+    activity.start("Optional message");
+    // alternate calling is: topic.publish("activity/start", "message");
+    
+    //-- Do something
+    
+    activity.stop();
+    // alternate calling is: topic.publish("activity/stop");
+});        </pre>
+    </div>   
+
+    <div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props="label:'Config Settings'"></div>
+    <div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="">
+    	The following setting can be applied directly, or passing in an object to activity.init().
+    	<br/>
+    	<pre>
+{
+	// defaultMessage : String
+	//		Message to show on IOS devices
+	defaultMessage : "Loading",
+
+	// useNative : boolean
+	//		Use native activity indicator if available.
+	useNative   : true,
+
+	// iosOptions : Map
+	//		Various options specific to IOS
+	iosOptions  : {
+		"bounceAnimation" : false,
+		"textColor"       : "#FFFFFF",
+		"fullScreen"      : false,
+		"duration"        : 0,
+		"minDuration"     : 2
+	},
+
+	// containerId : String
+	//		Force specific container for all activities.
+	containerId : "",
+}</pre>
+    </div>   
+
+</div>

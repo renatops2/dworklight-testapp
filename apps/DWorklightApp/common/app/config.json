@@ -1,0 +1,67 @@
+{
+    "id": "App",
+    "name": "dapp-boilerplate",
+    "description": "dworklight - Dojo-Worklight modules test app",
+    "loaderConfig": {
+        "paths": {
+            "app": "../app"
+        }
+    },
+    "dependencies": [
+        "app/controllers/CustomHistory",
+        "dapp/controllers/HistoryHash",
+        "dojox/mobile/common"
+    ],
+    "controllers": [
+        "dapp/controllers/Load",
+        "dapp/controllers/Transition",
+        "dapp/controllers/Layout"
+    ],
+    "defaultView": "home",
+    "views": {
+        "home":{
+            "template": "app/views/home/home.html",
+            "controller" : "app/views/home/home.js"
+        },
+        "activity":{
+            "template"   : "app/views/activity/activity.html",
+            "controller" : "app/views/activity/activity.js"
+        },
+        "camera":{
+            "template"   : "app/views/camera/camera.html",
+            "controller" : "app/views/camera/camera.js"
+        },
+        "console":{
+            "template"   : "app/views/console/console.html",
+            "controller" : "app/views/console/console.js"
+        },
+        "request":{
+            "template"   : "app/views/request/request.html",
+            "controller" : "app/views/request/request.js"
+        },
+        "require":{
+            "template"   : "app/views/require/require.html",
+            "controller" : "app/views/require/require.js"
+        },
+        "sniffCordova":{
+            "template"   : "app/views/sniffCordova/sniffCordova.html",
+            "controller" : "app/views/sniffCordova/sniffCordova.js"
+        },
+        "sniffWorklight":{
+            "template"   : "app/views/sniffWorklight/sniffWorklight.html",
+            "controller" : "app/views/sniffWorklight/sniffWorklight.js"
+        }
+    },
+    "has": {
+        "html5history": {
+            "controllers": [
+                "app/controllers/CustomHistory"
+            ]
+        },
+        "!html5history": {
+            "controllers": [
+                "dapp/controllers/HistoryHash"
+            ]
+        }
+    }
+}
