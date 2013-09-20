@@ -6,5 +6,5 @@
 **/gen
 *.zip
 *.wlapp
-
 *.war
+.DS_Store
