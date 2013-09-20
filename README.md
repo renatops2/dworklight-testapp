@@ -14,6 +14,7 @@ All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/abou
 
 This project requires the following other projects to run. All are included with this project.
  * dojo
+ * dijit
  * dojox/mobile
  * dapp
  * dcordova
@@ -22,17 +23,24 @@ This project requires the following other projects to run. All are included with
 ## Installation
 
 Manual installation procedure:
-1. Create a directory (ie dworklight-testapp) inside your Worklight Studio workspace
-2. Install this project into the just created directory by cloning from github
-	- git clone git://github.com/ibm-dojo/dworklight-testapp.git
-3. Import the new project into Worklight Studio
-4. Perform a Build and Deploy all
-5. Install onto desired device and run.
+1. Install this project into your Worklight Studio workspace by cloning from github
+	- cd ~/dev/workspace
+	- git clone git://github.com/kfbishop/dworklight-testapp.git
+2. Update submodule dependencies from git
+	- cd dworklight-testapp
+	- git submodule init
+	- git submodule update
+4. Import the new project into Worklight Studio
+	- File > Import > Existing project into Workspace
+	- Select root directory of ~/dev/workspace/dworklight-testapp
+5. Perform a Build and Deploy all
+6. Install onto desired device and run.
+
 
 
 ## Documentation
 
-See dcordova and dworklight for information on the modules being exercised.
+See [dcordova](https://github.com/ibm-dojo/dcordova) and [dworklight](https://github.com/ibm-dojo/dworklight) for information on the modules being exercised.
 
 
 ## Credits
