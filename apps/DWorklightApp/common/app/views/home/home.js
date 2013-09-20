@@ -1,11 +1,11 @@
 /*global define, console*/
 define([
-    'dojox/mobile/Heading',
+    "dojox/mobile/Heading",
     "dojox/mobile/EdgeToEdgeCategory",
-    'dojox/mobile/EdgeToEdgeList',
-    'dojox/mobile/ListItem'
+    "dojox/mobile/EdgeToEdgeList",
+    "dojox/mobile/ListItem"
 ], function () {
-    'use strict';
+    "use strict";
     return {
         init: function () {
             // summary:

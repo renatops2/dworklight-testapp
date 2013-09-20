@@ -1,6 +1,11 @@
 
 /* this CSS file extends the application CSS file found under common\css */
 
+html, body {
+	background-color: #000000;
+}
+
+
 /* body should stretch in an Android application */
 body {
 	height: auto;

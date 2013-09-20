@@ -8,6 +8,7 @@ define([
     "dojox/mobile/Heading",
     "dojox/mobile/RoundRect",
     "dojox/mobile/RoundRectCategory",
+    "dojox/mobile/RoundRectList"
 ], function (array, domConstruct, has, ListItem) {
     "use strict";
     return {

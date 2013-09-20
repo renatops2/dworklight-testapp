@@ -14,7 +14,7 @@ define([
 	
 	//-- Template only modules
 	"dojox/mobile/Heading",
-	"dojox/mobile/RoundRect",
+	"dojox/mobile/RoundRect"
 	
 ], function(template, ViewWidget, declare, lang, json, domStyle, when, SimpleForm, AlertDialog, config, service ) {
 
@@ -47,7 +47,7 @@ define([
     					value    : config.get("issw/web/service"),
     					readonly : true,
     					style    : "height:140px;font-family:monospace;"
-    				},
+    				}
     			},
     			{
     				name        : "call",
@@ -63,13 +63,13 @@ define([
     				name        : "adapter",
     				label       : "WL Adapter",
     				description : "Worklight Adapter name",
-    				type        : "string",
+    				type        : "string"
     			},
     			{
     				name        : "procedure",
     				label       : "WL Procedure",
     				description : "Worklight Procedure name",
-    				type        : "string",
+    				type        : "string"
     			},
     			{
     				name        : "data",
@@ -79,8 +79,8 @@ define([
     				inputArgs   : {
     					placeholder  : "[ 'arg1', {a:12,b:false}, true]",
     					style    : "height:60px;font-family:monospace;"
-    				},
-    			},
+    				}
+    			}
     		];        		
 
 			this.form = new SimpleForm({
@@ -94,7 +94,7 @@ define([
 			var F = MODULE + ":makeServiceCall:";
 			console.log(F, arguments);
 			
-			var prmoise;
+			var promise;
 			if ( data.call ) {
 				//-- Make direct service call
 				promise = service.call( data.call, { data:data.data, handleError:false } );
@@ -126,10 +126,11 @@ define([
 		getWLServices : function() {
 			var F = MODULE + ":getWLServices:";
 			var resp =[];
+			var key = null;
 			var cfg = config.get("issw/web/service");
-			for( var key in cfg.services ) {
+			for( key in cfg.services ) {
 				var svc = cfg.services[key];
-				if ( svc.type == "wladapter" ) {
+				if ( svc.type === "wladapter" ) {
 					resp.push(key);
 				}
 			}

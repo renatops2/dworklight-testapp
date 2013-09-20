@@ -53,7 +53,7 @@ define([
         takePicture: function( type ) {
         	var F = this.name + ":takePicture:";
         	console.log(F,"Starting. Type:", type);
-        	var dtype = type === "data" ? Camera.DestinationType.DATA_URL : Camera.DestinationType.FILE_URI
+        	var dtype = type === "data" ? Camera.DestinationType.DATA_URL : Camera.DestinationType.FILE_URI;
         	var image = this.dapImage;
         	var label = this.dapLabel;
             image.src = "";

@@ -15,7 +15,7 @@ var profile = {
         // It is strongly recommended that the `mini` build flag be used instead of `copyTests`. Therefore, no files
         // are marked with the `test` tag here.
         test: function (filename, mid) {
-            'use strict';
+            "use strict";
             return false;
         },
 
@@ -24,7 +24,7 @@ var profile = {
         // are typically binaries (images, etc.) and may be corrupted by the build system if it attempts to process
         // them and naively assumes they are scripts.
         copyOnly: function (filename, mid) {
-            'use strict';
+            "use strict";
             return (/^app\/resources\//.test(filename) && !/\.css$/.test(filename));
 
         },
@@ -32,7 +32,7 @@ var profile = {
         //If you see 303 errors in dojo build is because your package is missing this line
         //to state to all html files as declarative
         declarative: function (filename, mid) {
-            'use strict';
+            "use strict";
             return (/\.html?$/).test(filename); // tags any .html or .htm files as declarative
         },
 
@@ -40,7 +40,7 @@ var profile = {
         // All JavaScript in this package should be AMD modules if you are starting a new project. If you are copying
         // any legacy scripts from an existing project, those legacy scripts should not be given the `amd` tag.
         amd: function (filename, mid) {
-            'use strict';
+            "use strict";
             return !this.copyOnly(filename, mid) && /\.js$/.test(filename);
         },
 
@@ -49,9 +49,9 @@ var profile = {
         // the application.
 
         miniExclude: function (filename, mid) {
-            'use strict';
+            "use strict";
             var list = {
-                'app/package': true
+                "app/package": true
             };
             if (list[mid]) {
                 return true;

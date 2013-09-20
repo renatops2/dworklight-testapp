@@ -6,7 +6,7 @@ define([
     "dworklight/console",
     "dojox/mobile/Heading",
     "dojox/mobile/RoundRect",
-    "dojox/mobile/RoundRectCategory",
+    "dojox/mobile/RoundRectCategory"
 ], function (array, has) {
     "use strict";
     return {

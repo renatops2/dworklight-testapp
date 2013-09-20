@@ -7,7 +7,7 @@ define([
     "dcordova/sniff",
     "dojox/mobile/Heading",
     "dojox/mobile/RoundRect",
-    "dojox/mobile/RoundRectCategory",
+    "dojox/mobile/RoundRectCategory"
 ], function (array, domConstruct, has, ListItem) {
     "use strict";
     return {

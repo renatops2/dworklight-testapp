@@ -5,14 +5,14 @@
  **/
 
 define([
-    'dojo/sniff',
-    'dapp/main',
-    'dojox/json/ref',
-    'dojo/text!app/config.json',
-    'dojo/_base/config',
-    'dojo/domReady!'
+    "dojo/sniff",
+    "dapp/main",
+    "dojox/json/ref",
+    "dojo/text!app/config.json",
+    "dojo/_base/config",
+    "dojo/domReady!"
 ], function (has, dApp, json, config, dojoConfig) {
-    'use strict';
+    "use strict";
     var appConfig = json.fromJson(config);
 
     // for some reason appConfig.loaderConfig.paths.app set to ../src/app when running from source
