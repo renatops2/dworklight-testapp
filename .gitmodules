@@ -1,0 +1,9 @@
+[submodule "apps/DWorklightApp/common/libs/dapp"]
+	path = apps/DWorklightApp/common/libs/dapp
+	url = git://github.com/ibm-dojo/dapp.git
+[submodule "apps/DWorklightApp/common/libs/dcordova"]
+	path = apps/DWorklightApp/common/libs/dcordova
+	url = git://github.com/ibm-dojo/dcordova.git
+[submodule "apps/DWorklightApp/common/libs/dworklight"]
+	path = apps/DWorklightApp/common/libs/dworklight
+	url = git://github.com/ibm-dojo/dworklight.git
