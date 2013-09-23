@@ -36,6 +36,7 @@ Manual installation procedure:
 5. Perform a Build and Deploy all
 6. Install onto desired device and run.
 
+You may wish to occasionally rerun the `git submodule update` command to ensure you have the latest commits of the dependent modules (dapp, dcordova, dworklight).
 
 
 ## Documentation
