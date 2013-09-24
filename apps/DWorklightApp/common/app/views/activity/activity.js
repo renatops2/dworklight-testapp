@@ -4,8 +4,7 @@ define([
     "dojo/on",
     "dworklight/activity",
     
-    
-    "dojo/text!app/views/activity/activity.html",
+    "dojox/mobile/CheckBox",
     "dojox/mobile/EdgeToEdgeList",
     "dojox/mobile/Heading",
     "dojox/mobile/ListItem",
@@ -20,7 +19,10 @@ define([
             // summary:
             //      view life cycle init()
             console.log(this.name + " view:init()");
+            this.dapUseNative.set("checked", activity.useNative);
+            this.dapText.set("value", activity.defaultMessage);
             this.own(
+            	on( this.dapUseNative.domNode      , "change", lang.hitch(this, "setUseNative") ),
 				on( this.dapMessageButton.domNode  , "click", lang.hitch(this, "processMessageBusy")  ),
 				on( this.dapCountdownButton.domNode, "click", lang.hitch(this, "processCountdownBusy") )
 			);
@@ -47,9 +49,19 @@ define([
         },
         
 		//-----------------------------------------------------------------------------------------
+		setUseNative: function(evt) {		
+			var F = this.name + ":setUseNative:";
+			var val = evt.target.checked;
+			//console.log(F,"Checkbox value:", val);
+			activity.init({
+				useNative : val
+			});
+		},
+		
+		//-----------------------------------------------------------------------------------------
 		processMessageBusy: function() {		
 			var F = this.name + ":processMessageBusy: ";
-			var msg = this.dapText.get("value");
+			var msg = !this.dapText.get("checked");
 			console.log(F,"Starting message busy: ", msg);
 			activity.start(msg);
 			setTimeout( function() {

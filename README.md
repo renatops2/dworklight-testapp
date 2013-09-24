@@ -36,7 +36,11 @@ Manual installation procedure:
 5. Perform a Build and Deploy all
 6. Install onto desired device and run.
 
-You may wish to occasionally rerun the `git submodule update` command to ensure you have the latest commits of the dependent modules (dapp, dcordova, dworklight).
+You may wish to occasionally run the following commands to ensure you have the latest commits of the dependent modules.
+1. From the project root:
+	- `git submodule update`
+2. From each of the following submodule dirs (dapp,dcordova,dworklight) under: `apps/DworklightApp/common/lib`
+	- `git merge origin/master`
 
 
 ## Documentation

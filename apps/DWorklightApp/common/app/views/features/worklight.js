@@ -4,7 +4,7 @@ define([
     "dojo/has",
     "dojox/mobile/ListItem",
     
-    "dworklight/sniff",
+    "dworklight/features",
     "dojox/mobile/Heading",
     "dojox/mobile/RoundRect",
     "dojox/mobile/RoundRectCategory",
@@ -13,6 +13,8 @@ define([
     "use strict";
     return {
     	
+    	title : "Worklight 'Features'",
+
     	hasTests : [
        	    "worklight",
        	    "worklight-device",

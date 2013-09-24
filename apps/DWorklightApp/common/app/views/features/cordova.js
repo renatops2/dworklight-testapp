@@ -4,13 +4,15 @@ define([
     "dojo/has",
     "dojox/mobile/ListItem",
     
-    "dcordova/sniff",
+    "dcordova/features",
     "dojox/mobile/Heading",
     "dojox/mobile/RoundRect",
     "dojox/mobile/RoundRectCategory"
 ], function (array, domConstruct, has, ListItem) {
     "use strict";
     return {
+    	
+    	title : "Cordova 'Features'",
     	
     	hasTests : [
 	  		"cordova",

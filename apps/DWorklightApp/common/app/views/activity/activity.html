@@ -1,13 +1,18 @@
 <div class="view mblView">
 
-	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'home'">Worklight Dynamic Busy Indicator Tests</h1>
+	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'home'">Worklight Activity Tests</h1>
 	
     <div style="width:80%; margin: 20px auto;">
+    	Activity message: 
         <input data-dojo-attach-point="dapText" 
              data-dojo-type="dojox/mobile/TextBox"
              data-dojo-props="placeHolder:'Enter activity message'"
-             style="width:100%;">
-        </input>
+             style="width:10em;" />
+        <br/><br/>
+		Use native busy (if available):
+		<input data-dojo-attach-point="dapUseNative"
+			data-dojo-type="dojox/mobile/CheckBox" type="checkbox" />
+        <br/><br/>
 	    <div data-dojo-attach-point="dapMessageButton" 
 	         data-dojo-type="dojox/mobile/ToolBarButton"
 	         data-dojo-props="label:'Click to start busy indicator'"

@@ -43,13 +43,13 @@
             "template"   : "app/views/require/require.html",
             "controller" : "app/views/require/require.js"
         },
-        "sniffCordova":{
-            "template"   : "app/views/sniffCordova/sniffCordova.html",
-            "controller" : "app/views/sniffCordova/sniffCordova.js"
+        "featuresCordova":{
+            "template"   : "app/views/features/features.html",
+            "controller" : "app/views/features/cordova.js"
         },
-        "sniffWorklight":{
-            "template"   : "app/views/sniffWorklight/sniffWorklight.html",
-            "controller" : "app/views/sniffWorklight/sniffWorklight.js"
+        "featuresWorklight":{
+            "template"   : "app/views/features/features.html",
+            "controller" : "app/views/features/worklight.js"
         }
     },
     "has": {
