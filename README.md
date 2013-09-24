@@ -23,6 +23,7 @@ This project uses embedded instances of the following projects.
 ## Installation
 
 Manual installation procedure:
+
 1. Install this project into your Worklight Studio workspace by cloning from github
 	- cd ~/dev/workspace
 	- git clone git://github.com/kfbishop/dworklight-testapp.git
