@@ -1,23 +1,26 @@
 {
-  "name"          : "dworklight",
-  "version"       : "1.9",
-  "author"        : "Karl Bishop, Chris Felix, and others",
-  "main"          : "./main",
-  "description"   : "Dojo-Worklight integration modules",
-	"licenses": [
-    	{
-        	"type": "AFLv2.1",
-        	"url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
-     	}
-	],
-	"repository": {
-    	"type" : "git",
-    	"url"  : "https://github.com/kfbishop/dworklight.git"
-  	},
-    "dependencies": {
-	    "dojo"  : ["1.9"],
-	    "dijit" : ["1.9"],
-	    "dojox" : ["1.9"]
-    },
-    "dojoBuild"     : "dworklight.profile.js"
+  "name"          : "dworklight-testapp",
+  "version"       : "1.0.0",
+  "description"   : "Worklight project/app to exercise the dworklight and dcordova modules",
+  "keywords"      : ["worklight", "dojo", "dcordova", "dworklight", "mobile", "hybrid"],
+  "homepage"      : "https://github.com/kfbishop/dworklight-testapp",
+  "bugs"          : "https://github.com/kfbishop/dworklight-testapp/issues",
+  "contributors"  : [
+    "Karl Bishop <kfbishop@us.ibm.com>"
+  ],
+  "repository": {
+    "type" : "git",
+    "url"  : "https://github.com/kfbishop/dworklight-testapp.git"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url" : "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+    }
+  ],
+  "devDependencies": {
+    "grunt"            : "~0.4.1",
+    "grunt-bower-task" : "~0.3.2",
+    "grunt-shell"      : "~0.4.0"
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "dworklight-testapp",
+  "version": "1.0.0",
+  "description": "Worklight project/app to exercise the dworklight and dcordova modules",
+  "authors": [
+    "kfbishop <kfbishop@gmail.com>"
+  ],
+  "dependencies" : {
+    "dapp"       : "ibm-dojo/dapp",
+    "dcordova"   : "ibm-dojo/dcordova",
+    "dworklight" : "ibm-dojo/dworklight"
+  },
+  "keywords": [
+    "worklight",
+    "mobile",
+    "dworklight",
+    "dcordova"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
